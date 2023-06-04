@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="jquery-3" href="script.js">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="dance.html">DANCE</a>
+            <a href="contact.html">CONTACT</a>    
+        </nav>    
+    </header>
+        <article id="contact">
+            <div id="contact-text">
+                <div id="contact-h1-p">
+                    <h1 id="contact-h1">CONTACT</h1>
+                    <p id="contact-p">
+                        少しでも興味を持って頂けたら嬉しいです。<br>
+                        質問等はこちらからお待ちしてます！
+                    </p>
+                </div>
+            <form id="form-js" form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="text" name="honeypot" style="display:none">
+                <!-- STATIC FORMSのアクセスキー -->
+                <input type="hidden" name="accessKey" value="97a68ee0-41a7-46da-bb4f-00038e73018e">
+                <!--メールのタイトル-->
+                <input type="hidden" name="subject" value="お問い合わせフォーム" />
+                <!--送信先のメールアドレスをvalueに設定する-->
+                <input type="hidden" name="replyTo" value="sonchan1216@gmail.com">
+                <!--redirectToのURLは公開後のURLへリンクする-->
+                <input type="hidden" name="redirectTo" value="">>
+                <div id="form">
+                    <div id="form-all">
+                        <div id="form-left">
+                            <div>
+                                <div class="label">
+                                    <label>Name</label>
+                                </div>
+                                <div id="name-textbox">
+                                    <input id="name-textbox-js" class="textbox" type="text" autocomplete="off" name="name" placeholder="入力してください">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="label">
+                                    <label>Mail address</label>
+                                </div>
+                                <div id="mail-textbox">
+                                    <input id="mail-textbox-js" class=textbox type="text" autocomplete="off" name="mail address" placeholder="入力してください">
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input id="send-button" type="submit" value="Send">
+                                </div>
+                            </div>    
+                        </div>
+                        <div id="form-right">
+                                <div class="label">
+                                    <label>Message</label>
+                                </div>
+                                <div>
+                                    <textarea id="textarea" autocomplete="off" name="message" placeholder="入力してください"></textarea>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </article>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
